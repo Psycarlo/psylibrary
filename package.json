@@ -25,8 +25,11 @@
     "typescript": "^5.4.5"
   },
   "devDependencies": {
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.2.10",
     "prettier": "^3.3.2",
     "prettier-plugin-astro": "^0.14.0",
-    "prettier-plugin-tailwindcss": "^0.6.4"
+    "prettier-plugin-tailwindcss": "^0.6.4",
+    "tailwind-merge": "^2.3.0"
   }
 }
