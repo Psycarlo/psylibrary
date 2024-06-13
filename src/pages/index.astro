@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro'
 
 import LetterPullup from '../components/LetterPullup'
+import NumberTicker from '../components/NumberTicker'
 
 import carlosImage from '../assets/carlos.png'
 import mybitgImage from '../assets/mybitg.png'
@@ -196,7 +197,7 @@ const priceUSD = data['1_min'][1].p
         <p class="inline-flex items-center gap-1">
           <span class="text-white drop-shadow-lg">$</span>
           <span class="font-bold text-xl md:text-2xl text-white drop-shadow-lg">
-            {priceUSD}
+            <NumberTicker value={priceUSD} client:visible />
           </span>
         </p>
         <svg
