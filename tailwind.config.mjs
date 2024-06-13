@@ -4,6 +4,9 @@ export default {
   darkMode: 'class',
   theme: {
     extend: {
+      screens: {
+        mdl: '1180px'
+      },
       colors: {
         brand: {}
       },

@@ -6,35 +6,115 @@ import LetterPullup from '../components/LetterPullup'
 import carlosImage from '../assets/carlos.png'
 import mybitgImage from '../assets/mybitg.png'
 import psybitcoinImage from '../assets/psybitcoin.png'
+import psyuiImage from '../assets/psyui.png'
 ---
 
 <Layout title="Everything about psy | Psylibrary">
   <header class="h-16">
     <nav
-      class="flex max-w-screen-xl justify-between items-center h-full mx-auto px-8"
+      class="flex max-w-screen-mdl justify-between items-center h-full mx-auto px-4 md:px-8"
     >
       <a class="font-bold">[psylibrary]</a>
       <ul>
         <li class="flex gap-12">
-          <a class="font-medium">Home</a>
-          <a class="font-medium text-gray-500 cursor-pointer" href="/#projects"
-            >Projects</a
-          >
-          <a class="font-medium text-gray-500 cursor-pointer" href="/#contact"
-            >Contact</a
-          >
+          <a class="font-medium" href="/#home">Home</a>
+          <a class="font-medium text-gray-500 cursor-pointer" href="/#projects">
+            Projects
+          </a>
+          <a class="font-medium text-gray-500 cursor-pointer" href="/#contact">
+            Contact
+          </a>
         </li>
       </ul>
     </nav>
   </header>
-  <main class="flex max-w-screen-xl mx-auto px-8 justify-center flex-col gap-6">
-    <div class="flex gap-12">
-      <div></div>
-      <div class=""></div>
+  <main
+    class="flex max-w-screen-mdl mx-auto px-4 md:px-8 justify-center flex-col gap-6"
+  >
+    <div class="flex gap-6 flex-col-reverse md:flex-row">
+      <div
+        id="home"
+        class="w-full md:w-8/12 justify-between rounded-3xl -mb-3 h-[500px] p-8 flex flex-col items-start bg-gradient-to-r from-indigo-100 to-yellow-100"
+      >
+        <div class="flex flex-col gap-3">
+          <LetterPullup
+            client:visible
+            words={'Welcome to psylibrary'}
+            delay={0.05}
+          />
+          <p class="font-semibold">Everything about psy is here for you.</p>
+          <div class="flex flex-col gap-2">
+            <p class="mt-12 w-3/4">
+              Psy started with our cousin. Now we are 3 siblings that work
+              together to create things. We work with everything: from
+              programming and design to video editing and social media. We are
+              passionate about bitcoin and how it can change the world.
+            </p>
+            <p>Check our projects below and feel free to contact us.</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <a
+            href="mailto:psycarlo1@gmail.com"
+            class="h-12 rounded-full px-4 md:px-12 inline-flex items-center justify-center text-white bg-[#161616] hover:bg-black duration-100 transition-colors"
+          >
+            Contact us
+          </a>
+          <a
+            class="group cursor-pointer h-12 w-12 min-w-[3rem] min-h-[3rem] bg-white hover:bg-gradient-to-br hover:from-[#833AB4] hover:via-[#FD1D1D] hover:to-[#FCB045] flex items-center justify-center rounded-full"
+            href="https://www.instagram.com/psybitcoin"
+            target="_blank"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              class="w-6 h-6 group-hover:text-white"
+            >
+              <path
+                fill="currentColor"
+                d="M13.028 2c1.125.003 1.696.009 2.189.023l.194.007c.224.008.445.018.712.03c1.064.05 1.79.218 2.427.465c.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428c.012.266.022.487.03.712l.006.194c.015.492.021 1.063.023 2.188l.001.746v1.31a78.831 78.831 0 0 1-.023 2.188l-.006.194c-.008.225-.018.446-.03.712c-.05 1.065-.22 1.79-.466 2.428a4.883 4.883 0 0 1-1.153 1.772a4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.427.465a72.11 72.11 0 0 1-.712.03l-.194.006c-.493.014-1.064.021-2.189.023l-.746.001h-1.309a78.43 78.43 0 0 1-2.189-.023l-.194-.006a63.036 63.036 0 0 1-.712-.031c-1.064-.05-1.79-.218-2.428-.465a4.889 4.889 0 0 1-1.771-1.153a4.904 4.904 0 0 1-1.154-1.772c-.247-.637-.415-1.363-.465-2.428a74.1 74.1 0 0 1-.03-.712l-.005-.194A79.047 79.047 0 0 1 2 13.028v-2.056a78.82 78.82 0 0 1 .022-2.188l.007-.194c.008-.225.018-.446.03-.712c.05-1.065.218-1.79.465-2.428A4.88 4.88 0 0 1 3.68 3.678a4.897 4.897 0 0 1 1.77-1.153c.638-.247 1.363-.415 2.428-.465c.266-.012.488-.022.712-.03l.194-.006a79 79 0 0 1 2.188-.023zM12 7a5 5 0 1 0 0 10a5 5 0 0 0 0-10m0 2a3 3 0 1 1 .001 6a3 3 0 0 1 0-6m5.25-3.5a1.25 1.25 0 0 0 0 2.5a1.25 1.25 0 0 0 0-2.5"
+              >
+              </path>
+            </svg>
+          </a>
+          <a
+            class="group cursor-pointer h-12 w-12 min-w-[3rem] min-h-[3rem] bg-white hover:bg-black flex items-center justify-center rounded-full"
+            href="https://github.com/Psycarlo"
+            target="_blank"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              class="w-6 h-6 group-hover:text-white"
+            >
+              <path
+                fill="currentColor"
+                d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"
+              >
+              </path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div
+        class="w-full md:w-4/12 h-[260px] md:h-[500px] bg-orange-300 rounded-3xl flex items-center justify-center"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          class="text-white w-36 h-36 md:h-44 md:w-44"
+        >
+          <path
+            fill="currentColor"
+            d="M8 13v4H6v2h3v2h2v-2h2v2h2v-2.051c1.968-.249 3.5-1.915 3.5-3.949c0-1.32-.65-2.484-1.64-3.213A3.982 3.982 0 0 0 18 9c0-1.858-1.279-3.411-3-3.858V3h-2v2h-2V3H9v2H6v2h2zm6.5 4H10v-4h4.5c1.103 0 2 .897 2 2s-.897 2-2 2M10 7h4c1.103 0 2 .897 2 2s-.897 2-2 2h-4z"
+          >
+          </path>
+        </svg>
+      </div>
     </div>
     <div id="projects" class="flex gap-6 flex-col md:flex-row pt-3">
       <a
-        class="group w-full md:w-1/2 h-[580px] bg-[#9400d3] rounded-3xl flex flex-col p-8 cursor-pointer"
+        class="overflow-hidden group w-full md:w-1/2 h-[520px] bg-[#9400d3] rounded-3xl flex flex-col pt-8 px-8 cursor-pointer justify-between"
         target="_blank"
         href="https://psybitcoin.com"
       >
@@ -66,11 +146,12 @@ import psybitcoinImage from '../assets/psybitcoin.png'
         <img
           src={psybitcoinImage.src}
           alt="Psybitcoin"
-          class="w-full group-hover:scale-[1.02] duration-500 transition-all ease-in-out self-center rounded-md"
+          class="w-10/12 group-hover:scale-[1.02] duration-500 transition-all ease-in-out self-center rounded-md"
         />
+        <div></div>
       </a>
       <a
-        class="group w-full md:w-1/2 h-[580px] bg-black rounded-3xl flex flex-col pt-8 px-8 cursor-pointer justify-between"
+        class="overflow-hidden group w-full md:w-1/2 h-[520px] bg-black rounded-3xl flex flex-col pt-8 px-8 cursor-pointer justify-between"
         target="_blank"
         href="https://mybitg.com"
       >
@@ -104,11 +185,12 @@ import psybitcoinImage from '../assets/psybitcoin.png'
           alt="MyBitG"
           class="w-full group-hover:scale-[1.02] duration-500 transition-all ease-in-out self-center rounded-md"
         />
+        <div></div>
       </a>
     </div>
     <div class="flex gap-6 flex-col md:flex-row">
       <a
-        class="group w-full md:w-1/2 h-[580px] bg-green-500 rounded-3xl flex flex-col p-8 cursor-pointer"
+        class="group w-full md:w-1/2 h-[520px] bg-blue-400 rounded-3xl flex flex-col p-8 cursor-pointer justify-between"
         target="_blank"
         href="https://psyui.com"
       >
@@ -135,9 +217,15 @@ import psybitcoinImage from '../assets/psybitcoin.png'
             </svg>
           </div>
         </div>
+        <img
+          src={psyuiImage.src}
+          alt="Psyui"
+          class="w-10/12 group-hover:scale-[1.02] duration-500 transition-all ease-in-out self-center rounded-md"
+        />
+        <div></div>
       </a>
       <a
-        class="overflow-hidden group w-full md:w-1/2 h-[580px] bg-[#D8DBE3] rounded-3xl flex flex-col pt-8 px-8 cursor-pointer justify-between"
+        class="overflow-hidden group w-full md:w-1/2 h-[520px] bg-[#D8DBE3] rounded-3xl flex flex-col pt-8 px-8 cursor-pointer justify-between"
         target="_blank"
         href="https://psycarlo.com"
       >
@@ -173,15 +261,59 @@ import psybitcoinImage from '../assets/psybitcoin.png'
     </div>
     <div
       id="contact"
-      class="w-full rounded-3xl h-[350px] p-6 flex flex-col items-start"
+      class="justify-between mb-6 w-full rounded-3xl h-[300px] p-8 flex flex-col items-start bg-gradient-to-r from-indigo-100 to-yellow-100"
     >
-      <LetterPullup
-        client:visible
-        words={'Want to work together?'}
-        delay={0.05}
-      />
-      <p>Feel free to reach out for collaborations or just a friedly hello</p>
-      <a href="mailto:psycarlo1@gmail.com">psycarlo1@gmail.com</a>
+      <div class="flex flex-col gap-3">
+        <LetterPullup
+          client:visible
+          words={'Want to work together?'}
+          delay={0.05}
+        />
+        <p>Feel free to reach out for collaborations or just a friedly hello</p>
+        <a href="mailto:psycarlo1@gmail.com">psycarlo1@gmail.com</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <a
+          href="mailto:psycarlo1@gmail.com"
+          class="h-12 rounded-full px-4 md:px-12 inline-flex items-center justify-center text-white bg-[#161616] hover:bg-black duration-100 transition-colors"
+        >
+          Contact us
+        </a>
+        <a
+          class="group cursor-pointer h-12 w-12 min-w-[3rem] min-h-[3rem] bg-white hover:bg-gradient-to-br hover:from-[#833AB4] hover:via-[#FD1D1D] hover:to-[#FCB045] flex items-center justify-center rounded-full"
+          href="https://www.instagram.com/psybitcoin"
+          target="_blank"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            class="w-6 h-6 group-hover:text-white"
+          >
+            <path
+              fill="currentColor"
+              d="M13.028 2c1.125.003 1.696.009 2.189.023l.194.007c.224.008.445.018.712.03c1.064.05 1.79.218 2.427.465c.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428c.012.266.022.487.03.712l.006.194c.015.492.021 1.063.023 2.188l.001.746v1.31a78.831 78.831 0 0 1-.023 2.188l-.006.194c-.008.225-.018.446-.03.712c-.05 1.065-.22 1.79-.466 2.428a4.883 4.883 0 0 1-1.153 1.772a4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.427.465a72.11 72.11 0 0 1-.712.03l-.194.006c-.493.014-1.064.021-2.189.023l-.746.001h-1.309a78.43 78.43 0 0 1-2.189-.023l-.194-.006a63.036 63.036 0 0 1-.712-.031c-1.064-.05-1.79-.218-2.428-.465a4.889 4.889 0 0 1-1.771-1.153a4.904 4.904 0 0 1-1.154-1.772c-.247-.637-.415-1.363-.465-2.428a74.1 74.1 0 0 1-.03-.712l-.005-.194A79.047 79.047 0 0 1 2 13.028v-2.056a78.82 78.82 0 0 1 .022-2.188l.007-.194c.008-.225.018-.446.03-.712c.05-1.065.218-1.79.465-2.428A4.88 4.88 0 0 1 3.68 3.678a4.897 4.897 0 0 1 1.77-1.153c.638-.247 1.363-.415 2.428-.465c.266-.012.488-.022.712-.03l.194-.006a79 79 0 0 1 2.188-.023zM12 7a5 5 0 1 0 0 10a5 5 0 0 0 0-10m0 2a3 3 0 1 1 .001 6a3 3 0 0 1 0-6m5.25-3.5a1.25 1.25 0 0 0 0 2.5a1.25 1.25 0 0 0 0-2.5"
+            >
+            </path>
+          </svg>
+        </a>
+        <a
+          class="group cursor-pointer h-12 w-12 min-w-[3rem] min-h-[3rem] bg-white hover:bg-black flex items-center justify-center rounded-full"
+          href="https://github.com/Psycarlo"
+          target="_blank"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            class="w-6 h-6 group-hover:text-white"
+          >
+            <path
+              fill="currentColor"
+              d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"
+            >
+            </path>
+          </svg>
+        </a>
+      </div>
     </div>
   </main>
 </Layout>
