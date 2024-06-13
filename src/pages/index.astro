@@ -7,6 +7,21 @@ import carlosImage from '../assets/carlos.png'
 import mybitgImage from '../assets/mybitg.png'
 import psybitcoinImage from '../assets/psybitcoin.png'
 import psyuiImage from '../assets/psyui.png'
+
+type Tik = {
+  t: number
+  p: number
+}
+
+type BitboResponse = {
+  '1_min': Tik[]
+}
+
+const response = await fetch(
+  'https://api.bitbo.io/price-history?interval=1_min&limit=2'
+)
+const data: BitboResponse = (await response.json()) as BitboResponse
+const priceUSD = data['1_min'][1].p
 ---
 
 <Layout title="Everything about psy | Psylibrary">
@@ -176,12 +191,18 @@ import psyuiImage from '../assets/psyui.png'
         </div>
       </div>
       <div
-        class="w-full md:w-4/12 h-[260px] md:h-[500px] bg-orange-300 rounded-3xl flex items-center justify-center"
+        class="w-full flex-col md:w-4/12 h-[260px] md:h-[500px] bg-orange-300 rounded-3xl flex items-center justify-center"
       >
+        <p class="inline-flex items-center gap-1">
+          <span class="text-white drop-shadow-lg">$</span>
+          <span class="font-bold text-xl md:text-2xl text-white drop-shadow-lg">
+            {priceUSD}
+          </span>
+        </p>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
-          class="text-white w-36 h-36 md:h-44 md:w-44"
+          class="text-white w-36 h-36 md:h-44 md:w-44 drop-shadow-lg"
         >
           <path
             fill="currentColor"
