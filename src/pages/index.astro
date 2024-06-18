@@ -28,18 +28,28 @@ const priceUSD = data['1_min'][1].p
 ---
 
 <Layout title="Everything about psy | Psylibrary">
-  <header class="h-16">
+  <header id="header" class="h-16">
     <nav
       class="flex max-w-screen-mdl justify-between items-center h-full mx-auto px-4 md:px-8"
     >
-      <a class="font-bold">[psylibrary]</a>
+      <a href="/#header" class="font-bold" aria-label="Return to home"
+        >[psylibrary]</a
+      >
       <ul>
         <li class="gap-12 hidden sm:flex">
-          <a class="font-medium" href="/#home">Home</a>
-          <a class="font-medium text-gray-500 cursor-pointer" href="/#projects">
+          <a class="font-medium" href="/#home" aria-label="Home">Home</a>
+          <a
+            class="font-medium text-gray-500 cursor-pointer"
+            href="/#projects"
+            aria-label="Projects"
+          >
             Projects
           </a>
-          <a class="font-medium text-gray-500 cursor-pointer" href="/#contact">
+          <a
+            class="font-medium text-gray-500 cursor-pointer"
+            href="/#contact"
+            aria-label="Contact"
+          >
             Contact
           </a>
         </li>
@@ -48,6 +58,7 @@ const priceUSD = data['1_min'][1].p
             class="font-medium rounded-md h-8 w-8 hover:bg-gray-100 flex items-center justify-center"
             href="/#home"
             title="home"
+            aria-label="Home"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -74,6 +85,7 @@ const priceUSD = data['1_min'][1].p
             class="font-medium rounded-md h-8 w-8 hover:bg-gray-100 flex items-center justify-center"
             href="/#projects"
             title="projects"
+            aria-label="Projects"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -96,6 +108,8 @@ const priceUSD = data['1_min'][1].p
           <a
             class="font-medium rounded-md h-8 w-8 hover:bg-gray-100 flex items-center justify-center"
             href="/#contact"
+            title="Contact"
+            aria-label="Contact"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -154,6 +168,7 @@ const priceUSD = data['1_min'][1].p
           <a
             href="mailto:psycarlo1@gmail.com"
             class="h-12 rounded-full px-4 md:px-12 inline-flex items-center justify-center text-white bg-[#161616] hover:bg-black duration-100 transition-colors"
+            aria-label="Contact us"
           >
             Contact us
           </a>
@@ -161,6 +176,7 @@ const priceUSD = data['1_min'][1].p
             class="group cursor-pointer h-12 w-12 min-w-[3rem] min-h-[3rem] bg-white hover:bg-gradient-to-br hover:from-[#833AB4] hover:via-[#FD1D1D] hover:to-[#FCB045] flex items-center justify-center rounded-full"
             href="https://www.instagram.com/psybitcoin"
             target="_blank"
+            aria-label="Instagram"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -178,6 +194,7 @@ const priceUSD = data['1_min'][1].p
             class="group cursor-pointer h-12 w-12 min-w-[3rem] min-h-[3rem] bg-white hover:bg-black flex items-center justify-center rounded-full"
             href="https://github.com/Psycarlo"
             target="_blank"
+            aria-label="Github"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -220,6 +237,7 @@ const priceUSD = data['1_min'][1].p
         class="overflow-hidden group w-full md:w-1/2 h-[520px] bg-[#9400d3] rounded-3xl flex flex-col pt-8 px-8 cursor-pointer justify-between"
         target="_blank"
         href="https://psybitcoin.com"
+        aria-label="Psybitcoin"
       >
         <div
           class="flex justify-between group-hover:scale-[1.02] duration-500 transition-all ease-in-out"
@@ -257,6 +275,7 @@ const priceUSD = data['1_min'][1].p
         class="overflow-hidden group w-full md:w-1/2 h-[520px] bg-black rounded-3xl flex flex-col pt-8 px-8 cursor-pointer justify-between"
         target="_blank"
         href="https://mybitg.com"
+        aria-label="MyBitG"
       >
         <div
           class="flex justify-between group-hover:scale-[1.02] duration-500 transition-all ease-in-out"
@@ -296,6 +315,7 @@ const priceUSD = data['1_min'][1].p
         class="group w-full md:w-1/2 h-[520px] bg-blue-400 rounded-3xl flex flex-col p-8 cursor-pointer justify-between"
         target="_blank"
         href="https://psyui.com"
+        aria-label="Psyui"
       >
         <div
           class="flex justify-between group-hover:scale-[1.02] duration-500 transition-all ease-in-out"
@@ -331,6 +351,7 @@ const priceUSD = data['1_min'][1].p
         class="overflow-hidden group w-full md:w-1/2 h-[520px] bg-[#D8DBE3] rounded-3xl flex flex-col pt-8 px-8 cursor-pointer justify-between"
         target="_blank"
         href="https://psycarlo.com"
+        aria-label="Psycarlo portfolio"
       >
         <div
           class="flex justify-between group-hover:scale-[1.02] duration-500 transition-all ease-in-out"
@@ -373,12 +394,15 @@ const priceUSD = data['1_min'][1].p
           delay={0.05}
         />
         <p>Feel free to reach out for collaborations or just a friedly hello</p>
-        <a href="mailto:psycarlo1@gmail.com">psycarlo1@gmail.com</a>
+        <a href="mailto:psycarlo1@gmail.com" aria-label="Contact email">
+          psycarlo1@gmail.com
+        </a>
       </div>
       <div class="flex items-center gap-4">
         <a
           href="mailto:psycarlo1@gmail.com"
           class="h-12 rounded-full px-4 md:px-12 inline-flex items-center justify-center text-white bg-[#161616] hover:bg-black duration-100 transition-colors"
+          aria-label="Contact us"
         >
           Contact us
         </a>
@@ -386,6 +410,7 @@ const priceUSD = data['1_min'][1].p
           class="group cursor-pointer h-12 w-12 min-w-[3rem] min-h-[3rem] bg-white hover:bg-gradient-to-br hover:from-[#833AB4] hover:via-[#FD1D1D] hover:to-[#FCB045] flex items-center justify-center rounded-full"
           href="https://www.instagram.com/psybitcoin"
           target="_blank"
+          aria-label="Instagram"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -403,6 +428,7 @@ const priceUSD = data['1_min'][1].p
           class="group cursor-pointer h-12 w-12 min-w-[3rem] min-h-[3rem] bg-white hover:bg-black flex items-center justify-center rounded-full"
           href="https://github.com/Psycarlo"
           target="_blank"
+          aria-label="Github"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
