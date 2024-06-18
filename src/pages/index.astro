@@ -1,4 +1,6 @@
 ---
+import { Image } from 'astro:assets'
+
 import Layout from '../layouts/Layout.astro'
 
 import LetterPullup from '../components/LetterPullup'
@@ -244,8 +246,8 @@ const priceUSD = data['1_min'][1].p
             </svg>
           </div>
         </div>
-        <img
-          src={psybitcoinImage.src}
+        <Image
+          src={psybitcoinImage}
           alt="Psybitcoin"
           class="w-10/12 group-hover:scale-[1.02] duration-500 transition-all ease-in-out self-center rounded-md"
         />
@@ -281,8 +283,8 @@ const priceUSD = data['1_min'][1].p
             </svg>
           </div>
         </div>
-        <img
-          src={mybitgImage.src}
+        <Image
+          src={mybitgImage}
           alt="MyBitG"
           class="w-full group-hover:scale-[1.02] duration-500 transition-all ease-in-out self-center rounded-md"
         />
@@ -318,8 +320,8 @@ const priceUSD = data['1_min'][1].p
             </svg>
           </div>
         </div>
-        <img
-          src={psyuiImage.src}
+        <Image
+          src={psyuiImage}
           alt="Psyui"
           class="w-10/12 group-hover:scale-[1.02] duration-500 transition-all ease-in-out self-center rounded-md"
         />
@@ -353,8 +355,8 @@ const priceUSD = data['1_min'][1].p
             </svg>
           </div>
         </div>
-        <img
-          src={carlosImage.src}
+        <Image
+          src={carlosImage}
           alt="Carlos Marques"
           class="w-[280px] group-hover:scale-[1.02] duration-500 transition-all ease-in-out self-center"
         />
