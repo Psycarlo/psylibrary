@@ -21,7 +21,8 @@ type BitboResponse = {
 }
 
 const response = await fetch(
-  'https://api.bitbo.io/price-history?interval=1_min&limit=2'
+  'https://api.bitbo.io/price-history?interval=1_min&limit=2',
+  { headers: { 'Cache-Control': 'no-cache' } }
 )
 const data: BitboResponse = (await response.json()) as BitboResponse
 const priceUSD = data['1_min'][1].p
